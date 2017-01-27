@@ -42,28 +42,28 @@ If alert class is not empty, then apply the below code
 /*
 * Targetting the first p tag inside article tag
 */
-article p:first-of-type {
-	font-size: 2rem;
-	font-style: italic;
-}
+// article p:first-of-type {
+// 	font-size: 2rem;
+// 	font-style: italic;
+// }
 
 /*
 * Targetting the last img tag inside article tag
 */
-article img:last-of-type {
-	border: 10px solid slategray;
-}
+// article img:last-of-type {
+// 	border: 10px solid slategray;
+// }
 
 /*
 * Targetting only blockquote tag inside the document
 */
-blockquote:only-of-type {
-	border-left: 5px solid slategray;
-	padding-left: 1rem;
-	font-weight: bold;
-	font-style: italic;
-	color: slategray;
-}
+// blockquote:only-of-type {
+// 	border-left: 5px solid slategray;
+// 	padding-left: 1rem;
+// 	font-weight: bold;
+// 	font-style: italic;
+// 	color: slategray;
+// }
 
 /*
 * Targetting only odd index paragraph
@@ -76,10 +76,122 @@ blockquote:only-of-type {
 /*
 * Every third p tag
 */
-article p:nth-of-type(3n) {
-	color: pink;
-}
+// article p:nth-of-type(3n) {
+// 	color: pink;
+// }
 
 /*
 * Try different formula like 4n+3, etc to select the element
 */
+
+/*
+* Chp: 03
+*/
+
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 5rem;
+	height: 100%;
+	background-color: blue;
+	color: #fff;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+aside {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 20rem;
+	background-color: grey;
+	color: #fff;
+}
+
+main {
+	margin-left: 5rem;
+	width: calc(100% - 25rem); /*(100% - (nav + aside))*/
+	background-color: red;
+	color: #fff;
+}
+
+@media screen and (max-width: 40em) {
+	nav {
+		width: 3rem;
+	}
+
+	aside {
+		width: 12rem;
+	}
+
+	main {
+		margin-left: 3rem;
+		width: calc(100% - 15rem);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
