@@ -89,55 +89,102 @@ If alert class is not empty, then apply the below code
 */
 
 
-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 5rem;
-	height: 100%;
-	background-color: blue;
-	color: #fff;
+// nav {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	width: 5rem;
+// 	height: 100%;
+// 	background-color: blue;
+// 	color: #fff;
+// }
+
+// ul {
+// 	margin: 0;
+// 	padding: 0;
+// }
+
+// aside {
+// 	position: fixed;
+// 	top: 0;
+// 	right: 0;
+// 	height: 100%;
+// 	width: 20rem;
+// 	background-color: grey;
+// 	color: #fff;
+// }
+
+// main {
+// 	margin-left: 5rem;
+// 	width: calc(100% - 25rem); /*(100% - (nav + aside))*/
+// 	background-color: red;
+// 	color: #fff;
+// }
+
+// @media screen and (max-width: 40em) {
+// 	nav {
+// 		width: 3rem;
+// 	}
+
+// 	aside {
+// 		width: 12rem;
+// 	}
+
+// 	main {
+// 		margin-left: 3rem;
+// 		width: calc(100% - 15rem);
+// 	}
+// }
+
+/*
+* Chp: 04
+*/
+
+// .box {
+// 	width: 60vw; /* width + margin = 100*/
+// 	height: 40vh;
+// 	margin: 30vh 20vw 30vh 20vw;
+// 	background-color: slategray;
+// }
+
+section {
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-ul {
-	margin: 0;
-	padding: 0;
-}
-
-aside {
-	position: fixed;
-	top: 0;
-	right: 0;
-	height: 100%;
-	width: 20rem;
-	background-color: grey;
-	color: #fff;
-}
-
-main {
-	margin-left: 5rem;
-	width: calc(100% - 25rem); /*(100% - (nav + aside))*/
-	background-color: red;
-	color: #fff;
-}
-
-@media screen and (max-width: 40em) {
-	nav {
-		width: 3rem;
-	}
-
-	aside {
-		width: 12rem;
-	}
-
-	main {
-		margin-left: 3rem;
-		width: calc(100% - 15rem);
-	}
+section:nth-of-type(1) {
+	background-image: url('https://unsplash.it/1024/683?image=1068');
 }
 
 
+section:nth-of-type(2) {
+	background-image: url('https://unsplash.it/1024/683?image=1073');
+}
 
+
+section:nth-of-type(3) {
+	background-image: url('https://unsplash.it/1024/683?image=1047');
+}
+
+section:nth-of-type(4) {
+	background-image: url('https://unsplash.it/1024/683?image=1032');
+}
+
+section p {
+	width: 100%;
+    font-size: 2rem;
+    color: #fff;
+    font-style: italic;
+}
 
 
 
