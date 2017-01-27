@@ -22,7 +22,7 @@
 
 To wrap it up and to make a smare code
 If alert class is not empty, then apply the below code
-*/
+
 
 .alert:not(:empty) {
 	border: 3px solid darkgreen;
@@ -32,3 +32,54 @@ If alert class is not empty, then apply the below code
 	color: #fff;
 	border-radius: 4px;
 }
+*/
+
+/*
+* Chp: 02
+*/
+
+
+/*
+* Targetting the first p tag inside article tag
+*/
+article p:first-of-type {
+	font-size: 2rem;
+	font-style: italic;
+}
+
+/*
+* Targetting the last img tag inside article tag
+*/
+article img:last-of-type {
+	border: 10px solid slategray;
+}
+
+/*
+* Targetting only blockquote tag inside the document
+*/
+blockquote:only-of-type {
+	border-left: 5px solid slategray;
+	padding-left: 1rem;
+	font-weight: bold;
+	font-style: italic;
+	color: slategray;
+}
+
+/*
+* Targetting only odd index paragraph
+*/
+/*article p:nth-of-type(odd) {
+	color: pink;
+}
+*/
+
+/*
+* Every third p tag
+*/
+article p:nth-of-type(3n) {
+	color: pink;
+}
+
+/*
+* Try different formula like 4n+3, etc to select the element
+*/
