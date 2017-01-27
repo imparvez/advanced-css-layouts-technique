@@ -1,0 +1,34 @@
+/*
+* Chp-01: Created a HTML structure where a class alert have p tag and a styling is also 
+* given to alert class. So if another alert div is initiated or used it will display a 
+* block which is empty. So to check if alert class have any another child element inside 
+* it and only then to apply the styling
+*/
+
+/*
+.alert {
+	border: 3px solid darkgreen;
+	margin: 1em;
+	padding: 1em;
+	background-color: seagreen;
+	color: #fff;
+	border-radius: 4px;
+}
+
+ This will apply only when the alert class doesn't have any child element
+ .alert:empty {
+ 	display: none;
+ }
+
+To wrap it up and to make a smare code
+If alert class is not empty, then apply the below code
+*/
+
+.alert:not(:empty) {
+	border: 3px solid darkgreen;
+	margin: 1em;
+	padding: 1em;
+	background-color: seagreen;
+	color: #fff;
+	border-radius: 4px;
+}
