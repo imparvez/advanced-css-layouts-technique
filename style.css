@@ -186,30 +186,39 @@ If alert class is not empty, then apply the below code
 //     font-style: italic;
 // }
 
-body {
-	color: #2e603c;
-}
+// body {
+// 	color: #2e603c;
+// }
 
-button {
-	cursor: pointer;
-	padding: 1.4rem;
-	border: 0;
-	border-radius: 4px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 1.4rem;
-	font-weight: 500;
-	color: white;
-	background-color: #3ac569;
-}
+// button {
+// 	cursor: pointer;
+// 	padding: 1.4rem;
+// 	border: 0;
+// 	border-radius: 4px;
+// 	text-align: center;
+// 	text-decoration: none;
+// 	font-size: 1.4rem;
+// 	font-weight: 500;
+// 	color: white;
+// 	background-color: #3ac569;
+// }
 
 /*
 * Want to set the color of the button inside section from bady tag and not the one being set 
 * in global
 */
 
-section button {
-	color: unset; //will inherit color from section tag as not color is assigned to section tag it will take body's color and not from button tag. Same goes with other styling
+// section button {
+// 	color: unset; //will inherit color from section tag as not color is assigned to section tag it will take body's color and not from button tag. Same goes with other styling
+// }
+
+/*
+* Chp: 06
+*/
+
+nav {
+	column-count: 4; //Divide it into 4 columns
+	column-width: 150px;
 }
 
 
